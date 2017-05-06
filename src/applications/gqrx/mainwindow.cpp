@@ -604,6 +604,9 @@ bool MainWindow::loadConfig(const QString cfgfile, bool check_crash,
     {
        remote->start_server();
        ui->actionRemoteControl->setChecked(true);
+
+       on_actionDSP_triggered(true);
+       ui->actionDSP->setChecked(true);
     }
 
     return conf_ok;
